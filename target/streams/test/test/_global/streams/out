@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(homework1_PAJtest, org.scalatest.tools.Framework$$anon$1@50127953, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mhomework1_PAJtest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFeature: Sets Operation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  Scenario: newSet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFeature: setUnion[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  Scenario: setUnion[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFeature: setIntersection[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  Scenario: setIntersection[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFeature: setdifference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  Scenario: setDifference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFeature: symmetric Difference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  Scenario: setSymmetricDifference[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 480 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	homework1_PAJtest[0m

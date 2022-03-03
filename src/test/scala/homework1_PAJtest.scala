@@ -40,6 +40,19 @@ class homework1_PAJtest extends featurespec.AnyFeatureSpec with GivenWhenThen {
       assert(setSymmetricDifference(Var("set2"),Var("set3")).evaluate() == Set(4,6,8,9))
     }
   }
+  Feature("Scope"){
+    Scenario("ourScope"){
+      ourScope("scope1",variables("set6",newSet("set6",Value(20),Value(30),Value(40)))).evaluate()
+      assert(ourScope("scope1",Var("set6")).evaluate() == Set(20,30,40))
+
+    }
+  }
+  Feature("Macro"){
+    Scenario("setMacro and getMacro"){
+      setMacro("macroUnion",setUnion(Var("set1"),Var("set2"))).evaluate()
+      assert(setUnion(Var("set3"),getMacro("macroUnion")).evaluate() == Set(1,2,3,4,5,6,8,9))
+    }
+  }
 }
 
 

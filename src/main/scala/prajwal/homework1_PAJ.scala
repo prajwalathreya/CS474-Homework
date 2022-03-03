@@ -9,8 +9,8 @@ object homework1_PAJ {
 
   //Creating a Map[String,Any]
   val a: scala.collection.mutable.Map[String, Any] = scala.collection.mutable.Map()
-  val macromap: String = "ourMacroFunction"
-  a += macromap -> scala.collection.mutable.Map[String, Any]()
+  val macromap1: String = "ourMacroFunction"
+  a += macromap1 -> scala.collection.mutable.Map[String, Any]()
 
   //enumeration with different cases
   enum hw1:
@@ -87,18 +87,20 @@ object homework1_PAJ {
             case _: Any => throw InvalidTypeException("Error")
           }
 
-
+        //case for scope
         case ourScope(ourScopeName, hw1) =>
           problem.get(ourScopeName) match {
-            case None =>
-              val ourScoping: scala.collection.mutable.Map[String, Any] = scala.collection.mutable.Map()
-              ourScoping += "outerScope" -> problem
-              //ourScoping to map
-              ourScoping += macromap -> scala.collection.mutable.Map[String, Any]()
-              ourScoping += ourScopeName -> ourScoping
-              hw1.evaluate(ourScoping)
+           case Some(localScope: scala.collection.mutable.Map[String, Any]) =>
+             hw1.evaluate(localScope)
+            case None => problem+= ourScopeName -> scala.collection.mutable.Map[String, Any]()
+
+              val localScope = problem(ourScopeName).asInstanceOf[scala.collection.mutable.Map[String, Any]]
+
+              localScope += "outerScope" -> problem
+
+              hw1.evaluate(localScope)
           }
-        //
+
 
         //case for the Union binary operation on sets
         case setUnion(set1: hw1, set2: hw1) =>
@@ -159,7 +161,7 @@ object homework1_PAJ {
           }
 
         case setMacro(ourMacroName, exp: hw1) =>
-          problem.get(macromap) match {
+          problem.get(macromap1) match {
             case Some(problemOurMacro) =>
               problemOurMacro.asInstanceOf[scala.collection.mutable.Map[String, Any]].put(ourMacroName, exp)
             case or: Any =>
@@ -168,7 +170,7 @@ object homework1_PAJ {
 
 
         case getMacro(ourMacroName) =>
-          problem(macromap) match {
+          problem(macromap1) match {
             case problemOurMacro: scala.collection.mutable.Map[String, Any] =>
               problemOurMacro(ourMacroName) match {
                 case value: hw1 =>

@@ -1,0 +1,80 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:44:23 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m44 |[0m            problem.get([31m"outerScope"[0m) [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |            [33m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |            [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |            It would fail on pattern case: Some(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:92:21 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m92 |[0m          problem.get(ourScopeName) [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |          [33m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |          [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |          It would fail on pattern case: Some(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:40:6 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m40 |[0m      [33mthis[0m [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |      [33m^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |      [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |      It would fail on pattern case: hw1.ourMacro(_, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:45:24 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m45 |[0m              [33mcase[0m Some(outerScope: scala.collection.mutable.Map[String, Any]) => [33mthis[0m.evaluate(outerScope)[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                        [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |the type test for collection.mutable.Map[String, Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:56:19 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m56 |[0m              [33mcase[0m outerScope: scala.collection.mutable.Map[String, Any] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                   [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |the type test for collection.mutable.Map[String, Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:74:17 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m74 |[0m            [33mcase[0m ourNewSet: Set[Any] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                 [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                 the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:84:17 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m84 |[0m            [33mcase[0m ourNewSet: Set[Any] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                 [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                 the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:107:18 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m107 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:107:37 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m107 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                                     [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:117:18 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m117 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:117:37 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m117 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                                     [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:127:18 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m127 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:127:37 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m127 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                                     [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:137:18 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m137 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:137:37 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m137 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                                     [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:149:18 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m149 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:149:37 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m149 |[0m            [33mcase[0m (ourSet1: Set[Any], ourSet2: Set[Any]) =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                                     [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |               the type test for Set[Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Unchecked Warning: /Users/prajwaljagadish/Desktop/CS474-Homework/src/main/scala/prajwal/homework1_PAJ.scala:172:17 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m172 |[0m            [33mcase[0m problemOurMacro: scala.collection.mutable.Map[String, Any] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |                 [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |the type test for collection.mutable.Map[String, Any] cannot be checked at runtime[0m
+[0m[[0m[33mwarn[0m] [0m[0m18 warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m18 warnings found[0m
