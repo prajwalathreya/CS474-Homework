@@ -1,4 +1,4 @@
-//package homework2
+//package prajwal_hw2
 //
 //
 //import prajwal.homework1_PAJ
