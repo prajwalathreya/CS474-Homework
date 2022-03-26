@@ -46,3 +46,69 @@ d)Assign : Assign operation can be used to locate any set and also to use any ot
 
        Assign("name of the set",setOperation_to_be_performed("name of the set",e,l,e,m,e,n,t,s)).eval()
 ->Project file name is homework and homework1_PAJ is the main file in src and homework1_PAJ in test is the test file with testcases. in build.sbt file I added the libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test"
+
+->Questions for homework3:
+
+~Can a class/interface inherit from itself?
+    A class doesn't inherit from itself.Every instantiation is a different,unrelated class and class can never extend itself.
+    example:
+    
+    public class extends{
+}
+    //public static void main(String [] args) {
+
+}
+
+    the output for this program wad "Error" cyclic inheritance.
+    But interface can inherit from one or more interfaces.The derived interface.
+
+
+~Can an interface inherit from an abstract class with all pure methods?
+    An abstract class defines the identity of a class.An interface can inherit multiple interface but cannot inherit a class.An abstract class can inherit a class and multiple interfaces.An interface cannot declare constructors or destruction.
+
+
+~Can an interface implement another interface?
+    One interface can extend any number of interfaces but one for the space cannot implement another Interface , because any interface is implemented then its methods must be defined and interface never has the definition of any actor.
+
+
+~Can a class implement two or more different interfaces that declare methods with exactly the same signatures?
+    If two interfaces contain a method with the same signature but different return type,then it is impossible to implement both the interface together.
+
+~Can an abstract class inherit from another abstract class and implement interfaces where all interfaces and the abstract class have methods with the same signatures?
+    Yes an abstract class can inherit from other abstract classes and implement interfaces where all interfaces and abstract class have methods with the same signature.
+    
+~Can an abstract class implement interfaces?
+    Yes an abstract class can implement interfaces.
+
+~Can a class implement two or more interfaces that have methods whose signatures differ only in return types?
+    If two interfaces contains a method with same signature but different in the return types,then it is impossible to implement both the implementation simultaneously
+
+
+~Can an abstract class inherit from a concrete class?
+    Abstract class is similar to interfaces.We cannot instantiate them but they might be some company for them. B may contain a concrete mix of methods declared with or without implemntation 
+
+
+~Can an abstract class/Interface be instantiated as anonymous concrete classes?
+    No we cannot instantiate an interface or abstract class.But we can instantiate an anonymous class that implements and extends the interface and extends the interface or abstractClass without defining a class Object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
