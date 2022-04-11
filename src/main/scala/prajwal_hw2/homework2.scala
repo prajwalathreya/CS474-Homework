@@ -2,6 +2,7 @@ package prajwal_hw2
 
 
 import prajwal_hw2.homework1_PAJ
+import prajwal_hw2.homework2.hw2.Assign1
 
 import java.io.InvalidClassException
 import java.util.NoSuchElementException
@@ -34,6 +35,12 @@ object homework2 :
     case ourInterfaceDef(name:String , args:homework2*)
     case ourInterface(name :String ,operation:homework2 )
     case abstractClassDef(name :String,operation:homework2*)
+    case ourCatchException(excepClassName:String , Catch1 : ourCatch , rules : Any*)
+    case ourCatch(VariableName: String , rules:Any*)
+    case ExcepClassDef(ourClassName:String , args : hw2)
+    case throwExcep(ExcepClassDef: hw2 , op1 : Assign1)
+    case Assign1(fieldName: String , value:Any*)
+
 
     def evaluate(b :scala.collection.mutable.Map[String,Any] = b): BasicType =
       this match {
@@ -182,6 +189,65 @@ object homework2 :
 
             case_: println("Error")
           }
+
+        case ourCatchException(excepClassName: String , Catch1 : ourCatch , rules :Any*)=>
+          val methScope:bMap = scala.collection.mutable.Map()
+          methScope += "outerScope" -> ourScope
+          methScope += field -> scala.collection.mutable.Map[String,Any]()
+          methScope(field).asInstanceOf[bmap] += "outerScope" -> ourScope(field)
+          break{
+            for (exp->rules) {
+              exp match{
+                case throwExcep(ourExcepClassDef:hw2 , rules : Assign1)=>
+                  ourExcepClassDef match{
+                    case classExcep:ourClassDef =>
+                      val ourClassDef : bMap = classExcep.eval(ourScope).asInstanceOf[bMap]
+                      if(ourClassDef(Class1)== any*)
+                        val Class2 = rules.eval(ourClassDef)
+                        methScope(field).asInstanceOf[bMap] += "classExcep"->Class2
+
+                        return catch.eval(methScope)
+                        break
+                      else
+                        throw Exception("Error")
+
+                case _:Any => throw Exception("Error!")
+              }
+
+            }
+          }
+      }
+
+
+
+        case ourCatch(VariableName : String , rules :Any*)=>
+          require(rules.length)
+          return rules.length
+          print(rules.length)
+          val catch :bMap = scala.collection.mutable.Map()
+          ourCatch += field -> scala.collection.mutable.Map[String,Any*]()
+          ourCatch(field).asInstanceOf[bMap] += variableName -> ourScope(field).asInstanceOf[bMap]
+          rules.get(rules.length).foreach{
+            case exp:hw2 => exp.eval(ourCatch)
+            case expExt :hw2 => eval(ourCatch)
+          case _:Any=> throw Exception("Error!")
+      }
+
+        case ExcepClassDef(ourClassName :String, args :hw2)=>
+          arg match{
+            case ourField(VariableName,accessType,value)=>
+              val curScope:bMap = nameEntity(className , ArraySeq(arg))
+              curScope += entity1 -> nameEntity1.excepClass
+              ourScope(classDef1).asInstanceOf(bMap) += ourClassName -> curScope
+
+            case _:Any => throw Exception("Error!")
+          }
+
+        case throwExcep(ExcepClassName :hw2 , op1 : Assign1)=>
+
+        case Assign1(fieldName: String , value: Any*)=>
+          ourScope(field).asInstanceOf[bMap] += field ->value
+          return field
 
         case abstractClassDef(name:String , args*)=>
           if (name == field_variable)
