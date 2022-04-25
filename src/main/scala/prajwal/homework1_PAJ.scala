@@ -30,6 +30,8 @@ object homework1_PAJ {
     case setDifference(ourset1: hw1, ourset2: hw1)
     case setSymmetricDifference(ourset1: hw1, ourset2: hw1)
     case setCartesianProduct(ourset1: hw1, ourset2: hw1)
+    case ourNewScope(exp :hw1)
+    case ifCondition(condition:hw1 , else1 : ourNewScope , then1 : ourNewScope)
 
 
 
@@ -166,6 +168,31 @@ object homework1_PAJ {
               problemOurMacro.asInstanceOf[scala.collection.mutable.Map[String, Any]].put(ourMacroName, exp)
             case or: Any =>
               throw Error("No Macro Found")
+          }
+
+        case ourNewScope(hw1*) =>
+          val newScope:scala.collection.mutable.Map[String,Any] = scala.collection.mutable.Map()
+          newScope += macromap1 -> scala.collection.mutable.Map[String,Any]()
+          newScope += "outerScope" -> problem
+          problem: scala.collection.mutable.Map[String,Any]
+        case or:Any =>
+          throw Error("Error!")
+
+
+        case ifCondition(condition: hw1 , else1:ourNewScope , then1:ourNewScope) =>
+          val condition1 = condition.evaluate(problem)
+          condition1 match{
+            case Right(cond:Boolean) =>
+              if(cond)
+                else1.evaluate(problem)
+              else
+                then1.evaluate(problem)
+            case Left(cond1:Boolean) =>
+              if(cond1)
+                else1.evaluate(problem)
+              else
+                then1.evaluate(problem)
+
           }
 
 

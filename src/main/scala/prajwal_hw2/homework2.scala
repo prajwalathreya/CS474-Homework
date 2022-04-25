@@ -40,6 +40,8 @@ object homework2 :
     case ExcepClassDef(ourClassName:String , args : hw2)
     case throwExcep(ExcepClassDef: hw2 , op1 : Assign1)
     case Assign1(fieldName: String , value:Any*)
+    case ourScope()
+    case ifCondition(variableCondition:hw2 ,else1 : ourScope )
 
 
     def evaluate(b :scala.collection.mutable.Map[String,Any] = b): BasicType =
